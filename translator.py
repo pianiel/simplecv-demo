@@ -72,33 +72,3 @@ def main():
 
 if __name__ == '__main__':
 	main()
-
-
-# translate = "translate"
-# listPairs = "listPairs"
-# apikey = ""
-#
-# query = "house"
-# langpair = "en|es"
-# service = "translate"
-# params = {"q": query, "langpair": langpair}
-# params["key"] = apikey
-# data = ul.urlencode(params)
-# req = ul2.Request(url + service, data)
-# try:
-# 	resp = ul2.urlopen(req)
-# except Exception, e:
-# 	print e.reason
-# httpcode = resp.code
-# if httpcode != 200:
-# 	print "http code:", httpcode
-# else:
-# 	jsobj = resp.read()
-# 	# print "JSON:", jsobj
-# 	pobj = json.loads(jsobj)
-# 	# print "DATA:",  pobj
-# 	status = pobj["responseStatus"]
-# 	if status != 200:
-# 		print "Response status:", status, pobj["responseDetails"]
-# 	else:
-# 		print langpair + ": " + query +" -> " + pobj["responseData"]['translatedText']
